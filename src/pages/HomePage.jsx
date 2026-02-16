@@ -181,8 +181,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="nav-right">
-            <Link to="/app" className="nav-link-btn">Sign in</Link>
-            <Link to="/app" className="nav-cta-btn">Start for free</Link>
+            <Link to="/login" className="nav-link-btn">Sign in</Link>
+            <Link to="/signup" className="nav-cta-btn">Start for free</Link>
           </div>
           <button className="mobile-menu-btn" onClick={() => setMobileMenu(!mobileMenu)}>
             {mobileMenu ? <X size={20} /> : <Menu size={20} />}
@@ -194,7 +194,7 @@ export default function HomePage() {
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
             <a href="#testimonials">Customers</a>
-            <Link to="/app" className="nav-cta-btn mobile">Start for free</Link>
+            <Link to="/signup" className="nav-cta-btn mobile">Start for free</Link>
           </div>
         )}
       </nav>
@@ -215,7 +215,7 @@ export default function HomePage() {
             connect with agents worldwide, and close transfers faster — all in one platform.
           </p>
           <div className="hero-actions">
-            <Link to="/app" className="btn-hero-primary">
+            <Link to="/signup" className="btn-hero-primary">
               Start for free <ArrowRight size={16} />
             </Link>
             <a href="#platform" className="btn-hero-secondary">
@@ -375,7 +375,7 @@ export default function HomePage() {
                 <li><Check size={16} className="check-icon" /> Multi-market & multi-currency support</li>
                 <li><Check size={16} className="check-icon" /> Role-based views for agents & scouts</li>
               </ul>
-              <Link to="/app" className="btn-section">
+              <Link to="/signup" className="btn-section">
                 Explore our data model <ArrowRight size={14} />
               </Link>
             </div>
@@ -558,7 +558,7 @@ export default function HomePage() {
                   {p.period && <span className="price-period">{p.period}</span>}
                 </div>
                 <p className="pricing-desc">{p.desc}</p>
-                <Link to="/app" className={`pricing-cta ${p.popular ? 'primary' : 'secondary'}`}>
+                <Link to="/signup" className={`pricing-cta ${p.popular ? 'primary' : 'secondary'}`}>
                   {p.cta}
                 </Link>
                 <ul className="pricing-features">
@@ -578,7 +578,7 @@ export default function HomePage() {
           <h2>Start closing deals faster.</h2>
           <p>Join thousands of football agents who use Inter to manage their careers. Free to start, powerful to scale.</p>
           <div className="cta-actions">
-            <Link to="/app" className="btn-hero-primary">
+            <Link to="/signup" className="btn-hero-primary">
               Start for free <ArrowRight size={16} />
             </Link>
             <a href="#platform" className="btn-hero-secondary">
